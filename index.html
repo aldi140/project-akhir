@@ -1,0 +1,1721 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Travelin</title>
+
+    <!-- link Bootsrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"
+    />
+
+    <!-- css AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <div class="container mt-2">
+            <a class="navbar-brand fw-bold" href="#">TRAVELIN</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active mx-2" aria-current="page" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#service">SERVICE</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#partner">PARTNER  </a>
+                    </li>
+                </ul>
+                <div class="button">
+                    <button class="button-secondary ">REGISTER</button>
+                    <button class="button-primary ">LOGIN</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- akhir nav -->
+
+    <!-- jumbotron -->
+
+    <section class="jumbotron jumbotron-fluid" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 offset-1">
+                    <h1 class="font-weight-bold" data-aos="fade-right" data-aos-duration="1000">Explore Your <span>Journey</span> With Us</h1>
+                    <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- akhir jumbotron -->
+    <!-- nav and tabs -->
+    <div class="container mt-5 ">
+        <div class="row">
+            <div class="col-md-10 offset-1 ">
+                <ul class="nav nav-tabs " id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link tab bg-light button-category" id="flight-tab" data-bs-toggle="tab" data-bs-target="#flight" type="button" role="tab" aria-controls="flight" aria-selected="true">
+                            <img src="img/flight-icon.png" alt="">
+                            <span>Flight<span></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link tab bg-light button-category" id="hotek-tab" data-bs-toggle="tab" data-bs-target="#hotel" type="button" role="tab" aria-controls="hotel" aria-selected="true">
+                            <img src="img/hotel-icon.png" alt="">
+                            <span>Hotel<span></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link tab bg-light button-category" id="train-tab" data-bs-toggle="tab" data-bs-target="#train" type="button" role="tab" aria-controls="train" aria-selected="true">
+                            <img src="img/train-icon.png" alt="">
+                            <span>Train<span></button>
+                    </li>
+
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="flight" role="tabpanel" aria-labelledby="flight-tab">
+                        <!-- dropdown flight -->
+                        <div class=" input-cari py-3 px-3 ">
+                            <div class="infomation d-inline-flex mx-3" style="font-size: 12px;">
+                                <div class="form-check mx-2">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                      One-way
+                                    </label>
+                                </div>
+                                <div class="form-check mx-2">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                     Round-trip
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="container">
+                                <div class="row mt-4">
+                                    <div class="col-md-3">
+                                        <div class="title-information mx-1 ">
+                                            <h5> <img src="img/location-icon.png" alt=""> Destination </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="title-information ">
+                                            <h5> <img src="img/location-icon.png" alt=""> When do we go? </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="title-information">
+                                            <h5> <img src="img/location-icon.png" alt=""> How Many? </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- form -->
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="form-floating py-2">
+                                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                        
+                                                <option value="" disabled selected>Select your option</option>
+                                                <option value="1">DKI JAKARTA (JKT)</option>
+                                                <option value="2">SEMARANG(SMG)</option>
+                                                <option value="3">DENPASAR (DPS)</option>
+                                                <option value="4">ACEH (ACH)</option>
+                                          
+                                        </select>
+                                            <label for="floatingSelect"><span>From<span></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="container" style="border: 1px solid rgb(216, 214, 214); font-size: 14px; border-radius: 3px; margin-top: 8px; color: rgb(168, 167, 167);">
+                                            <form>
+                                                <label for="floatingSelect">date:</label>
+                                                <input type="date" id="floatingSelect" name="floatingSelect" style="border: none;">
+                                            </form>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-floating py-2">
+                                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                                <option value="" disabled selected >Select your option</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                          
+                                        </select>
+                                            <label for="floatingSelect"><span>Much<span></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <button class="button-cari " type="button" id="button-addon2">
+                                            <img src="img/search-icon.png" alt="">
+                                            Search Ticket </button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="hotel" role="tabpanel" aria-labelledby="hotel-tab">
+                        <div class=" input-cari py-3 px-3 ">
+                            <div class="infomation d-inline-flex mx-3" style="font-size: 12px;">
+                                <div class="form-check mx-2">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                      One-way
+                                    </label>
+                                </div>
+                                <div class="form-check mx-2">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                     Round-trip
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="container">
+                                <div class="row mt-4">
+                                    <div class="col-md-3">
+                                        <div class="title-information mx-1 ">
+                                            <h5> <img src="img/location-icon.png" alt=""> Destination </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="title-information ">
+                                            <h5> <img src="img/location-icon.png" alt=""> When do we go? </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="title-information">
+                                            <h5> <img src="img/location-icon.png" alt=""> How Many? </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- form -->
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="form-floating py-2">
+                                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                                <option value="" disabled selected >Select your option</option>
+                                                <option value="1">DKI JAKARTA (JKT)</option>
+                                                <option value="2">SEMARANG(SMG)</option>
+                                                <option value="3">DENPASAR(DPS)</option>
+                                                <option value="4">ACEH(ACH)</option>
+                                        </select>
+                                            <label for="floatingSelect"><span>place to stay<span></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="container" style="border: 1px solid rgb(216, 214, 214); font-size: 14px; border-radius: 3px; margin-top: 8px; color: rgb(168, 167, 167);">
+                                            <form>
+                                                <label for="floatingSelect">checkin:</label>
+                                                <input type="date" id="floatingSelect" name="floatingSelect" style="border: none;">
+                                            </form>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-floating py-2">
+                                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                                <option value="" disabled selected >Select your option</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                        </select>
+                                            <label for="floatingSelect"><span>Much<span></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <button class="button-cari " type="button" id="button-addon2">
+                                            <img src="img/search-icon.png" alt="">
+                                            Search Ticket </button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="train" role="tabpanel" aria-labelledby="train-tab">
+                        <div class=" input-cari py-3 px-3 ">
+                            <div class="infomation d-inline-flex mx-3" style="font-size: 12px;">
+                                <div class="form-check mx-2">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                      One-way
+                                    </label>
+                                </div>
+                                <div class="form-check mx-2">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                     Round-trip
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="container">
+                                <div class="row mt-4">
+                                    <div class="col-md-3">
+                                        <div class="title-information mx-1 ">
+                                            <h5> <img src="img/location-icon.png" alt=""> Destination </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="title-information ">
+                                            <h5> <img src="img/location-icon.png" alt=""> When do we go? </h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="title-information">
+                                            <h5> <img src="img/location-icon.png" alt=""> How Many? </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- form -->
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="form-floating py-2">
+                                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                                <option value="" disabled selected >Select your option</option>
+                                                <option value="1">DKI JAKARTA (JKT)</option>
+                                                <option value="2">SEMARANG(SMG)</option>
+                                                <option value="3">DENPASAR(DPS)</option>
+                                                <option value="4">ACEH(ACH)</option>
+                                        </select>
+                                            <label for="floatingSelect"><span>From<span></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="container" style="border: 1px solid rgb(216, 214, 214); font-size: 14px; border-radius: 3px; margin-top: 8px; color: rgb(168, 167, 167);">
+                                            <form>
+                                                <label for="floatingSelect">date:</label>
+                                                <input type="date" id="floatingSelect" name="floatingSelect" style="border: none;">
+                                            </form>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-floating py-2">
+                                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                                <option value="" disabled selected >Select your option</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                        </select>
+                                            <label for="floatingSelect"><span>Much<span></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <button class="button-cari " type="button" id="button-addon2">
+                                            <img src="img/search-icon.png" alt="">
+                                            Search Ticket </button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- akhir nav and tabs -->
+
+    <!-- promo -->
+    <section class="promo" style="margin-top: 100px; height: 50vh;">
+        <div class="container">
+            <div class="row text-end mb-3 see-all">
+                <div class="col-12-md">
+                    <a href="#">lihat semua.. <img src="img/Vector.png" alt=""></a>
+                </div>
+            </div>
+            <div class="container-fluid my-5">
+
+                <div id="carouselExampleControls" class="carousel" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card-promo me-2">
+                                <div class="img-wrapper"><img src="img/promo-3.png" class="d-block w-100" alt="..."> </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card-promo me-2">
+                                <div class="img-wrapper"><img src="img/promo1.png" class="d-block w-100" alt="..."> </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card-promo me-2">
+                                <div class="img-wrapper"><img src="img/promo2.png" class="d-block w-100" alt="..."> </div>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card-promo me-2">
+                                <div class="img-wrapper"><img src="img/promo1.png" class="d-block w-100" alt="..."> </div>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card-promo me-2">
+                                <div class="img-wrapper"><img src="img/promo-3.png" class="d-block w-100" alt="..."> </div>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card-promo me-2">
+                                <div class="img-wrapper"><img src="img/promo2.png" class="d-block w-100" alt="..."> </div>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card-promo me-2">
+                                <div class="img-wrapper"><img src="img/promo1.png" class="d-block w-100" alt="..."> </div>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card-promo me-2">
+                                <div class="img-wrapper"><img src="img/promo2.png" class="d-block w-100" alt="..."> </div>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card-promo me-2">
+                                <div class="img-wrapper"><img src="img/promo-3.png" class="d-block w-100" alt="..."> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- akhir promo -->
+
+    <!-- Most Popular -->
+    <section class="most-popular">
+        <div class="container">
+            <div class="row mb-3" data-aos="fade-up" data-aos-duration="1000">
+                <div class="col-md-9 ">
+                    <div class="sub-title">
+                        <h3>Most <span>Popular</span> Destination this week!</h3>
+                    </div>
+                </div>
+                <div class="col-md-3  d-inline-flex justify-content-end ">
+                    <div class="see-all ">
+                        <a href="#">Lihat semua.. <img src="img/Vector.png" alt=""></a>
+                    </div>
+                </div>
+
+                <div id="carousel-slider" class="carousel" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card-most me-5 position-relative">
+                                <a href="#"><img src="img/mp1.png" alt="img"></a>
+                                <div class="overlay position-absolute top-0 bottom-0 start-0 end-0 w-100 h-100">
+                                    <div class="sub-title-mp">
+                                        <h5>
+                                            Tokyo,
+                                        </h5>
+                                        <p>Japan</p>
+                                        <span> <img src="img/star-icon.png" alt=""> 4.5/5</span>
+                                    </div>
+                                    <div>
+                                        <button class="button-mp position-absolute">Details.. <img src="img/vector2.png" alt="" class="ms-3"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item active">
+                            <div class="card-most me-5 position-relative">
+                                <a href="#"><img src="img/mp2.png" alt="img"></a>
+                                <div class="overlay position-absolute top-0 bottom-0 start-0 end-0 w-100 h-100">
+                                    <div class="sub-title-mp">
+                                        <h5>
+                                            Raja Ampat,
+                                        </h5>
+                                        <p>Indonesia</p>
+                                        <span> <img src="img/star-icon.png" alt=""> 4.5/5</span>
+                                    </div>
+                                    <div>
+                                        <button class="button-mp position-absolute">Details.. <img src="img/vector2.png" alt="" class="ms-3"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item active">
+                            <div class="card-most me-5 position-relative">
+                                <a href="#"><img src="img/mp3.png" alt="img"></a>
+                                <div class="overlay position-absolute top-0 bottom-0 start-0 end-0 w-100 h-100">
+                                    <div class="sub-title-mp">
+                                        <h5>
+                                            Bali,
+                                        </h5>
+                                        <p>Indonesia</p>
+                                        <span> <img src="img/star-icon.png" alt=""> 4.5/5</span>
+                                    </div>
+                                    <div>
+                                        <button class="button-mp position-absolute">Details.. <img src="img/vector2.png" alt="" class="ms-3"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item active">
+                            <div class="card-most me-5 position-relative">
+                                <a href="#"><img src="img/mp1.png" alt="img"></a>
+                                <div class="overlay position-absolute top-0 bottom-0 start-0 end-0 w-100 h-100">
+                                    <div class="sub-title-mp">
+                                        <h5>
+                                            Tokyo,
+                                        </h5>
+                                        <p>Japan</p>
+                                        <span> <img src="img/star-icon.png" alt=""> 4.5/5</span>
+                                    </div>
+                                    <div>
+                                        <button class="button-mp position-absolute">Details.. <img src="img/vector2.png" alt="" class="ms-3"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-slider" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-slider" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+
+    </section>
+    <!-- Akhir Most Popular -->
+
+    <!-- Rekomendasi -->
+    <section class="rekomendasi">
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="rekomendasi-title mt-5">
+                        <h5>Recommendation for you!</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item me-2" role="presentation">
+                            <button class="nav-link kategori-kota   active fw-normal" id="pills-1-tab" data-bs-toggle="pill" data-bs-target="#pills-1" type="button" role="tab" aria-controls="pills-1" aria-selected="true">Jakarta</button>
+                        </li>
+                        <li class="nav-item me-2" role="presentation">
+                            <button class="nav-link kategori-kota  fw-normal" id="pills-2-tab" data-bs-toggle="pill" data-bs-target="#pills-2" type="button" role="tab" aria-controls="pills-2" aria-selected="false">Yogyakarta</button>
+                        </li>
+                        <li class="nav-item me-2" role="presentation">
+                            <button class="nav-link kategori-kota fw-normal" id="pills-3-tab" data-bs-toggle="pill" data-bs-target="#pills-3" type="button" role="tab" aria-controls="pills-3" aria-selected="false">Bali</button>
+                        </li>
+                        <li class="nav-item me-2" role="presentation">
+                            <button class="nav-link kategori-kota fw-normal" id="pills-4-tab" data-bs-toggle="pill" data-bs-target="#pills-4" type="button" role="tab" aria-controls="pills-4" aria-selected="false">Papua</button>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="row" data-aos="fade-right" data-aos-duration="1000">
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-1" role="tabpanel" aria-labelledby="pills-1-tab">
+                        <div class="container p-0 m-0">
+                            <div class="row justify-content-start align-items-center">
+                                <div class="col-md-3 me-5 mb-3 ">
+                                    <div class="card card-rekomendasi" style="width: 282px;">
+                                        <img src="img/rec1.png" class="card-img-top" alt="...">
+                                        <div class="card-body position-relative">
+                                            <h5 class="card-title">Raja Ampat</h5>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12 p-0 m-0 mb-2">
+                                                        <span class="me-5"><img src="img/location-icon.png" alt=""> Indonesia</span>
+                                                        <span class="me-2"> <img src="img/Show.png" alt=""> +5.3k</span>
+                                                        <a href=""><img src="img/Bookmark.png" alt=""></a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa repudiandae natus error rerum quod vitae libero fugit laudantium repellat labore..</p>
+                                            <hr>
+                                            <div class="price">
+                                                <h3>$35</h3>
+                                            </div>
+                                            <div class="container p-0 m-0">
+                                                <div class="row">
+                                                    <div class="col-md-12 d-flex">
+                                                        <div class="info-detail me-2">
+                                                            <h5> <img src="img/icon-guest.png" alt="" class="me-2">2 Guest</h5>
+
+                                                        </div>
+                                                        <div class="info-detail me-2">
+                                                            <h5> <img src="img/icon-wearher.png" alt="" class="me-2">2 Guest</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="button-card-detail position-absolute text-center">Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 me-5 mb-3 ">
+                                    <div class="card card-rekomendasi" style="width: 282px;">
+                                        <img src="img/rec1.png" class="card-img-top" alt="...">
+                                        <div class="card-body position-relative">
+                                            <h5 class="card-title">Raja Ampat</h5>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12 p-0 m-0 mb-2">
+                                                        <span class="me-5"><img src="img/location-icon.png" alt=""> Indonesia</span>
+                                                        <span class="me-2"> <img src="img/Show.png" alt=""> +5.3k</span>
+                                                        <a href=""><img src="img/Bookmark.png" alt=""></a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa repudiandae natus error rerum quod vitae libero fugit laudantium repellat labore..</p>
+                                            <hr>
+                                            <div class="price">
+                                                <h3>$35</h3>
+                                            </div>
+                                            <div class="container p-0 m-0">
+                                                <div class="row">
+                                                    <div class="col-md-12 d-flex">
+                                                        <div class="info-detail me-2">
+                                                            <h5> <img src="img/icon-guest.png" alt="" class="me-2">2 Guest</h5>
+
+                                                        </div>
+                                                        <div class="info-detail me-2">
+                                                            <h5> <img src="img/icon-wearher.png" alt="" class="me-2">2 Guest</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="button-card-detail position-absolute text-center">Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 me-5 mb-3 ">
+                                    <div class="card card-rekomendasi" style="width: 282px;">
+                                        <img src="img/rec1.png" class="card-img-top" alt="...">
+                                        <div class="card-body position-relative">
+                                            <h5 class="card-title">Raja Ampat</h5>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12 p-0 m-0 mb-2">
+                                                        <span class="me-5"><img src="img/location-icon.png" alt=""> Indonesia</span>
+                                                        <span class="me-2"> <img src="img/Show.png" alt=""> +5.3k</span>
+                                                        <a href=""><img src="img/Bookmark.png" alt=""></a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa repudiandae natus error rerum quod vitae libero fugit laudantium repellat labore..</p>
+                                            <hr>
+                                            <div class="price">
+                                                <h3>$35</h3>
+                                            </div>
+                                            <div class="container p-0 m-0">
+                                                <div class="row">
+                                                    <div class="col-md-12 d-flex">
+                                                        <div class="info-detail me-2">
+                                                            <h5> <img src="img/icon-guest.png" alt="" class="me-2">2 Guest</h5>
+
+                                                        </div>
+                                                        <div class="info-detail me-2">
+                                                            <h5> <img src="img/icon-wearher.png" alt="" class="me-2">2 Guest</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="button-card-detail position-absolute text-center">Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 me-5 mb-3 ">
+                                    <div class="card card-rekomendasi" style="width: 282px;">
+                                        <img src="img/rec1.png" class="card-img-top" alt="...">
+                                        <div class="card-body position-relative">
+                                            <h5 class="card-title">Raja Ampat</h5>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12 p-0 m-0 mb-2">
+                                                        <span class="me-5"><img src="img/location-icon.png" alt=""> Indonesia</span>
+                                                        <span class="me-2"> <img src="img/Show.png" alt=""> +5.3k</span>
+                                                        <a href=""><img src="img/Bookmark.png" alt=""></a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa repudiandae natus error rerum quod vitae libero fugit laudantium repellat labore..</p>
+                                            <hr>
+                                            <div class="price">
+                                                <h3>$35</h3>
+                                            </div>
+                                            <div class="container p-0 m-0">
+                                                <div class="row">
+                                                    <div class="col-md-12 d-flex">
+                                                        <div class="info-detail me-2">
+                                                            <h5> <img src="img/icon-guest.png" alt="" class="me-2">2 Guest</h5>
+
+                                                        </div>
+                                                        <div class="info-detail me-2">
+                                                            <h5> <img src="img/icon-wearher.png" alt="" class="me-2">2 Guest</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="button-card-detail position-absolute text-center">Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 me-5 mb-3 ">
+                                    <div class="card card-rekomendasi" style="width: 282px;">
+                                        <img src="img/rec1.png" class="card-img-top" alt="...">
+                                        <div class="card-body position-relative">
+                                            <h5 class="card-title">Raja Ampat</h5>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12 p-0 m-0 mb-2">
+                                                        <span class="me-5"><img src="img/location-icon.png" alt=""> Indonesia</span>
+                                                        <span class="me-2"> <img src="img/Show.png" alt=""> +5.3k</span>
+                                                        <a href=""><img src="img/Bookmark.png" alt=""></a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa repudiandae natus error rerum quod vitae libero fugit laudantium repellat labore..</p>
+                                            <hr>
+                                            <div class="price">
+                                                <h3>$35</h3>
+                                            </div>
+                                            <div class="container p-0 m-0">
+                                                <div class="row">
+                                                    <div class="col-md-12 d-flex">
+                                                        <div class="info-detail me-2">
+                                                            <h5> <img src="img/icon-guest.png" alt="" class="me-2">2 Guest</h5>
+
+                                                        </div>
+                                                        <div class="info-detail me-2">
+                                                            <h5> <img src="img/icon-wearher.png" alt="" class="me-2">2 Guest</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="button-card-detail position-absolute text-center">Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 me-5 mb-3 ">
+                                    <div class="card card-rekomendasi" style="width: 282px;">
+                                        <img src="img/rec1.png" class="card-img-top" alt="...">
+                                        <div class="card-body position-relative">
+                                            <h5 class="card-title">Raja Ampat</h5>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12 p-0 m-0 mb-2">
+                                                        <span class="me-5"><img src="img/location-icon.png" alt=""> Indonesia</span>
+                                                        <span class="me-2"> <img src="img/Show.png" alt=""> +5.3k</span>
+                                                        <a href=""><img src="img/Bookmark.png" alt=""></a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa repudiandae natus error rerum quod vitae libero fugit laudantium repellat labore..</p>
+                                            <hr>
+                                            <div class="price">
+                                                <h3>$35</h3>
+                                            </div>
+                                            <div class="container p-0 m-0">
+                                                <div class="row">
+                                                    <div class="col-md-12 d-flex">
+                                                        <div class="info-detail me-2">
+                                                            <h5> <img src="img/icon-guest.png" alt="" class="me-2">2 Guest</h5>
+
+                                                        </div>
+                                                        <div class="info-detail me-2">
+                                                            <h5> <img src="img/icon-wearher.png" alt="" class="me-2">2 Guest</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="button-card-detail position-absolute text-center">Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-2-tab">
+                        <div class="container p-0 m-0">
+                            <div class="row justify-content-start align-items-center">
+                                <div class="col-md-3 me-5 mb-3 ">
+                                    <div class="card card-rekomendasi" style="width: 282px;">
+                                        <img src="img/rec1.png" class="card-img-top" alt="...">
+                                        <div class="card-body position-relative">
+                                            <h5 class="card-title">Raja Ampat</h5>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12 p-0 m-0 mb-2">
+                                                        <span class="me-5"><img src="img/location-icon.png" alt=""> Indonesia</span>
+                                                        <span class="me-2"> <img src="img/Show.png" alt=""> +5.3k</span>
+                                                        <a href=""><img src="img/Bookmark.png" alt=""></a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa repudiandae natus error rerum quod vitae libero fugit laudantium repellat labore..</p>
+                                            <hr>
+                                            <div class="price">
+                                                <h3>$35</h3>
+                                            </div>
+                                            <div class="container p-0 m-0">
+                                                <div class="row">
+                                                    <div class="col-md-12 d-flex">
+                                                        <div class="info-detail me-2">
+                                                            <h5> <img src="img/icon-guest.png" alt="" class="me-2">2 Guest</h5>
+
+                                                        </div>
+                                                        <div class="info-detail me-2">
+                                                            <h5> <img src="img/icon-wearher.png" alt="" class="me-2">2 Guest</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="button-card-detail position-absolute text-center">Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 me-5 mb-3 ">
+                                    <div class="card card-rekomendasi" style="width: 282px;">
+                                        <img src="img/rec1.png" class="card-img-top" alt="...">
+                                        <div class="card-body position-relative">
+                                            <h5 class="card-title">Raja Ampat</h5>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12 p-0 m-0 mb-2">
+                                                        <span class="me-5"><img src="img/location-icon.png" alt=""> Indonesia</span>
+                                                        <span class="me-2"> <img src="img/Show.png" alt=""> +5.3k</span>
+                                                        <a href=""><img src="img/Bookmark.png" alt=""></a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa repudiandae natus error rerum quod vitae libero fugit laudantium repellat labore..</p>
+                                            <hr>
+                                            <div class="price">
+                                                <h3>$35</h3>
+                                            </div>
+                                            <div class="container p-0 m-0">
+                                                <div class="row">
+                                                    <div class="col-md-12 d-flex">
+                                                        <div class="info-detail me-2">
+                                                            <h5> <img src="img/icon-guest.png" alt="" class="me-2">2 Guest</h5>
+
+                                                        </div>
+                                                        <div class="info-detail me-2">
+                                                            <h5> <img src="img/icon-wearher.png" alt="" class="me-2">2 Guest</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="button-card-detail position-absolute text-center">Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 me-5 mb-3 ">
+                                    <div class="card card-rekomendasi" style="width: 282px;">
+                                        <img src="img/rec1.png" class="card-img-top" alt="...">
+                                        <div class="card-body position-relative">
+                                            <h5 class="card-title">Raja Ampat</h5>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12 p-0 m-0 mb-2">
+                                                        <span class="me-5"><img src="img/location-icon.png" alt=""> Indonesia</span>
+                                                        <span class="me-2"> <img src="img/Show.png" alt=""> +5.3k</span>
+                                                        <a href=""><img src="img/Bookmark.png" alt=""></a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa repudiandae natus error rerum quod vitae libero fugit laudantium repellat labore..</p>
+                                            <hr>
+                                            <div class="price">
+                                                <h3>$35</h3>
+                                            </div>
+                                            <div class="container p-0 m-0">
+                                                <div class="row">
+                                                    <div class="col-md-12 d-flex">
+                                                        <div class="info-detail me-2">
+                                                            <h5> <img src="img/icon-guest.png" alt="" class="me-2">2 Guest</h5>
+
+                                                        </div>
+                                                        <div class="info-detail me-2">
+                                                            <h5> <img src="img/icon-wearher.png" alt="" class="me-2">2 Guest</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="button-card-detail position-absolute text-center">Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 me-5 mb-3 ">
+                                    <div class="card card-rekomendasi" style="width: 282px;">
+                                        <img src="img/rec1.png" class="card-img-top" alt="...">
+                                        <div class="card-body position-relative">
+                                            <h5 class="card-title">Raja Ampat</h5>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12 p-0 m-0 mb-2">
+                                                        <span class="me-5"><img src="img/location-icon.png" alt=""> Indonesia</span>
+                                                        <span class="me-2"> <img src="img/Show.png" alt=""> +5.3k</span>
+                                                        <a href=""><img src="img/Bookmark.png" alt=""></a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa repudiandae natus error rerum quod vitae libero fugit laudantium repellat labore..</p>
+                                            <hr>
+                                            <div class="price">
+                                                <h3>$35</h3>
+                                            </div>
+                                            <div class="container p-0 m-0">
+                                                <div class="row">
+                                                    <div class="col-md-12 d-flex">
+                                                        <div class="info-detail me-2">
+                                                            <h5> <img src="img/icon-guest.png" alt="" class="me-2">2 Guest</h5>
+
+                                                        </div>
+                                                        <div class="info-detail me-2">
+                                                            <h5> <img src="img/icon-wearher.png" alt="" class="me-2">2 Guest</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="button-card-detail position-absolute text-center">Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 me-5 mb-3 ">
+                                    <div class="card card-rekomendasi" style="width: 282px;">
+                                        <img src="img/rec1.png" class="card-img-top" alt="...">
+                                        <div class="card-body position-relative">
+                                            <h5 class="card-title">Raja Ampat</h5>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12 p-0 m-0 mb-2">
+                                                        <span class="me-5"><img src="img/location-icon.png" alt=""> Indonesia</span>
+                                                        <span class="me-2"> <img src="img/Show.png" alt=""> +5.3k</span>
+                                                        <a href=""><img src="img/Bookmark.png" alt=""></a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa repudiandae natus error rerum quod vitae libero fugit laudantium repellat labore..</p>
+                                            <hr>
+                                            <div class="price">
+                                                <h3>$35</h3>
+                                            </div>
+                                            <div class="container p-0 m-0">
+                                                <div class="row">
+                                                    <div class="col-md-12 d-flex">
+                                                        <div class="info-detail me-2">
+                                                            <h5> <img src="img/icon-guest.png" alt="" class="me-2">2 Guest</h5>
+
+                                                        </div>
+                                                        <div class="info-detail me-2">
+                                                            <h5> <img src="img/icon-wearher.png" alt="" class="me-2">2 Guest</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="button-card-detail position-absolute text-center">Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 me-5 mb-3 ">
+                                    <div class="card card-rekomendasi" style="width: 282px;">
+                                        <img src="img/rec1.png" class="card-img-top" alt="...">
+                                        <div class="card-body position-relative">
+                                            <h5 class="card-title">Raja Ampat</h5>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12 p-0 m-0 mb-2">
+                                                        <span class="me-5"><img src="img/location-icon.png" alt=""> Indonesia</span>
+                                                        <span class="me-2"> <img src="img/Show.png" alt=""> +5.3k</span>
+                                                        <a href=""><img src="img/Bookmark.png" alt=""></a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa repudiandae natus error rerum quod vitae libero fugit laudantium repellat labore..</p>
+                                            <hr>
+                                            <div class="price">
+                                                <h3>$35</h3>
+                                            </div>
+                                            <div class="container p-0 m-0">
+                                                <div class="row">
+                                                    <div class="col-md-12 d-flex">
+                                                        <div class="info-detail me-2">
+                                                            <h5> <img src="img/icon-guest.png" alt="" class="me-2">2 Guest</h5>
+
+                                                        </div>
+                                                        <div class="info-detail me-2">
+                                                            <h5> <img src="img/icon-wearher.png" alt="" class="me-2">2 Guest</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="button-card-detail position-absolute text-center">Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="pills-3" role="tabpanel" aria-labelledby="pills-3-tab">
+                        <div class="container p-0 m-0">
+                            <div class="row justify-content-start align-items-center">
+                                <div class="col-md-3 me-5 mb-3 ">
+                                    <div class="card card-rekomendasi" style="width: 282px;">
+                                        <img src="img/rec1.png" class="card-img-top" alt="...">
+                                        <div class="card-body position-relative">
+                                            <h5 class="card-title">Raja Ampat</h5>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12 p-0 m-0 mb-2">
+                                                        <span class="me-5"><img src="img/location-icon.png" alt=""> Indonesia</span>
+                                                        <span class="me-2"> <img src="img/Show.png" alt=""> +5.3k</span>
+                                                        <a href=""><img src="img/Bookmark.png" alt=""></a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa repudiandae natus error rerum quod vitae libero fugit laudantium repellat labore..</p>
+                                            <hr>
+                                            <div class="price">
+                                                <h3>$35</h3>
+                                            </div>
+                                            <div class="container p-0 m-0">
+                                                <div class="row">
+                                                    <div class="col-md-12 d-flex">
+                                                        <div class="info-detail me-2">
+                                                            <h5> <img src="img/icon-guest.png" alt="" class="me-2">2 Guest</h5>
+
+                                                        </div>
+                                                        <div class="info-detail me-2">
+                                                            <h5> <img src="img/icon-wearher.png" alt="" class="me-2">2 Guest</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="button-card-detail position-absolute text-center">Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 me-5 mb-3 ">
+                                    <div class="card card-rekomendasi" style="width: 282px;">
+                                        <img src="img/rec1.png" class="card-img-top" alt="...">
+                                        <div class="card-body position-relative">
+                                            <h5 class="card-title">Raja Ampat</h5>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12 p-0 m-0 mb-2">
+                                                        <span class="me-5"><img src="img/location-icon.png" alt=""> Indonesia</span>
+                                                        <span class="me-2"> <img src="img/Show.png" alt=""> +5.3k</span>
+                                                        <a href=""><img src="img/Bookmark.png" alt=""></a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa repudiandae natus error rerum quod vitae libero fugit laudantium repellat labore..</p>
+                                            <hr>
+                                            <div class="price">
+                                                <h3>$35</h3>
+                                            </div>
+                                            <div class="container p-0 m-0">
+                                                <div class="row">
+                                                    <div class="col-md-12 d-flex">
+                                                        <div class="info-detail me-2">
+                                                            <h5> <img src="img/icon-guest.png" alt="" class="me-2">2 Guest</h5>
+
+                                                        </div>
+                                                        <div class="info-detail me-2">
+                                                            <h5> <img src="img/icon-wearher.png" alt="" class="me-2">2 Guest</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="button-card-detail position-absolute text-center">Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 me-5 mb-3 ">
+                                    <div class="card card-rekomendasi" style="width: 282px;">
+                                        <img src="img/rec1.png" class="card-img-top" alt="...">
+                                        <div class="card-body position-relative">
+                                            <h5 class="card-title">Raja Ampat</h5>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12 p-0 m-0 mb-2">
+                                                        <span class="me-5"><img src="img/location-icon.png" alt=""> Indonesia</span>
+                                                        <span class="me-2"> <img src="img/Show.png" alt=""> +5.3k</span>
+                                                        <a href=""><img src="img/Bookmark.png" alt=""></a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa repudiandae natus error rerum quod vitae libero fugit laudantium repellat labore..</p>
+                                            <hr>
+                                            <div class="price">
+                                                <h3>$35</h3>
+                                            </div>
+                                            <div class="container p-0 m-0">
+                                                <div class="row">
+                                                    <div class="col-md-12 d-flex">
+                                                        <div class="info-detail me-2">
+                                                            <h5> <img src="img/icon-guest.png" alt="" class="me-2">2 Guest</h5>
+
+                                                        </div>
+                                                        <div class="info-detail me-2">
+                                                            <h5> <img src="img/icon-wearher.png" alt="" class="me-2">2 Guest</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="button-card-detail position-absolute text-center">Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 me-5 mb-3 ">
+                                    <div class="card card-rekomendasi" style="width: 282px;">
+                                        <img src="img/rec1.png" class="card-img-top" alt="...">
+                                        <div class="card-body position-relative">
+                                            <h5 class="card-title">Raja Ampat</h5>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12 p-0 m-0 mb-2">
+                                                        <span class="me-5"><img src="img/location-icon.png" alt=""> Indonesia</span>
+                                                        <span class="me-2"> <img src="img/Show.png" alt=""> +5.3k</span>
+                                                        <a href=""><img src="img/Bookmark.png" alt=""></a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa repudiandae natus error rerum quod vitae libero fugit laudantium repellat labore..</p>
+                                            <hr>
+                                            <div class="price">
+                                                <h3>$35</h3>
+                                            </div>
+                                            <div class="container p-0 m-0">
+                                                <div class="row">
+                                                    <div class="col-md-12 d-flex">
+                                                        <div class="info-detail me-2">
+                                                            <h5> <img src="img/icon-guest.png" alt="" class="me-2">2 Guest</h5>
+
+                                                        </div>
+                                                        <div class="info-detail me-2">
+                                                            <h5> <img src="img/icon-wearher.png" alt="" class="me-2">2 Guest</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="button-card-detail position-absolute text-center">Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 me-5 mb-3 ">
+                                    <div class="card card-rekomendasi" style="width: 282px;">
+                                        <img src="img/rec1.png" class="card-img-top" alt="...">
+                                        <div class="card-body position-relative">
+                                            <h5 class="card-title">Raja Ampat</h5>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12 p-0 m-0 mb-2">
+                                                        <span class="me-5"><img src="img/location-icon.png" alt=""> Indonesia</span>
+                                                        <span class="me-2"> <img src="img/Show.png" alt=""> +5.3k</span>
+                                                        <a href=""><img src="img/Bookmark.png" alt=""></a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa repudiandae natus error rerum quod vitae libero fugit laudantium repellat labore..</p>
+                                            <hr>
+                                            <div class="price">
+                                                <h3>$35</h3>
+                                            </div>
+                                            <div class="container p-0 m-0">
+                                                <div class="row">
+                                                    <div class="col-md-12 d-flex">
+                                                        <div class="info-detail me-2">
+                                                            <h5> <img src="img/icon-guest.png" alt="" class="me-2">2 Guest</h5>
+
+                                                        </div>
+                                                        <div class="info-detail me-2">
+                                                            <h5> <img src="img/icon-wearher.png" alt="" class="me-2">2 Guest</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="button-card-detail position-absolute text-center">Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 me-5 mb-3 ">
+                                    <div class="card card-rekomendasi" style="width: 282px;">
+                                        <img src="img/rec1.png" class="card-img-top" alt="...">
+                                        <div class="card-body position-relative">
+                                            <h5 class="card-title">Raja Ampat</h5>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12 p-0 m-0 mb-2">
+                                                        <span class="me-5"><img src="img/location-icon.png" alt=""> Indonesia</span>
+                                                        <span class="me-2"> <img src="img/Show.png" alt=""> +5.3k</span>
+                                                        <a href=""><img src="img/Bookmark.png" alt=""></a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa repudiandae natus error rerum quod vitae libero fugit laudantium repellat labore..</p>
+                                            <hr>
+                                            <div class="price">
+                                                <h3>$35</h3>
+                                            </div>
+                                            <div class="container p-0 m-0">
+                                                <div class="row">
+                                                    <div class="col-md-12 d-flex">
+                                                        <div class="info-detail me-2">
+                                                            <h5> <img src="img/icon-guest.png" alt="" class="me-2">2 Guest</h5>
+
+                                                        </div>
+                                                        <div class="info-detail me-2">
+                                                            <h5> <img src="img/icon-wearher.png" alt="" class="me-2">2 Guest</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="button-card-detail position-absolute text-center">Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-4" role="tabpanel" aria-labelledby="pills-4-tab">
+                        <div class="container p-0 m-0">
+                            <div class="row justify-content-start align-items-center">
+                                <div class="col-md-3 me-5 mb-3 ">
+                                    <div class="card card-rekomendasi" style="width: 282px;">
+                                        <img src="img/rec1.png" class="card-img-top" alt="...">
+                                        <div class="card-body position-relative">
+                                            <h5 class="card-title">Raja Ampat</h5>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12 p-0 m-0 mb-2">
+                                                        <span class="me-5"><img src="img/location-icon.png" alt=""> Indonesia</span>
+                                                        <span class="me-2"> <img src="img/Show.png" alt=""> +5.3k</span>
+                                                        <a href=""><img src="img/Bookmark.png" alt=""></a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa repudiandae natus error rerum quod vitae libero fugit laudantium repellat labore..</p>
+                                            <hr>
+                                            <div class="price">
+                                                <h3>$35</h3>
+                                            </div>
+                                            <div class="container p-0 m-0">
+                                                <div class="row">
+                                                    <div class="col-md-12 d-flex">
+                                                        <div class="info-detail me-2">
+                                                            <h5> <img src="img/icon-guest.png" alt="" class="me-2">2 Guest</h5>
+
+                                                        </div>
+                                                        <div class="info-detail me-2">
+                                                            <h5> <img src="img/icon-wearher.png" alt="" class="me-2">2 Guest</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="button-card-detail position-absolute text-center">Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-3 ">
+                                    <div class="card card-rekomendasi" style="width: 282px;">
+                                        <img src="img/rec1.png" class="card-img-top" alt="...">
+                                        <div class="card-body position-relative">
+                                            <h5 class="card-title">Raja Ampat</h5>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12 p-0 m-0 mb-2">
+                                                        <span class="me-5"><img src="img/location-icon.png" alt=""> Indonesia</span>
+                                                        <span class="me-2"> <img src="img/Show.png" alt=""> +5.3k</span>
+                                                        <a href=""><img src="img/Bookmark.png" alt=""></a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa repudiandae natus error rerum quod vitae libero fugit laudantium repellat labore..</p>
+                                            <hr>
+                                            <div class="price">
+                                                <h3>$35</h3>
+                                            </div>
+                                            <div class="container p-0 m-0">
+                                                <div class="row">
+                                                    <div class="col-md-12 d-flex">
+                                                        <div class="info-detail me-2">
+                                                            <h5> <img src="img/icon-guest.png" alt="" class="me-2">2 Guest</h5>
+
+                                                        </div>
+                                                        <div class="info-detail me-2">
+                                                            <h5> <img src="img/icon-wearher.png" alt="" class="me-2">2 Guest</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="button-card-detail position-absolute text-center">Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3  mb-3 ">
+                                    <div class="card card-rekomendasi" style="width: 282px;">
+                                        <img src="img/rec1.png" class="card-img-top" alt="...">
+                                        <div class="card-body position-relative">
+                                            <h5 class="card-title">Raja Ampat</h5>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12 p-0 m-0 mb-2">
+                                                        <span class="me-5"><img src="img/location-icon.png" alt=""> Indonesia</span>
+                                                        <span class="me-2"> <img src="img/Show.png" alt=""> +5.3k</span>
+                                                        <a href=""><img src="img/Bookmark.png" alt=""></a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa repudiandae natus error rerum quod vitae libero fugit laudantium repellat labore..</p>
+                                            <hr>
+                                            <div class="price">
+                                                <h3>$35</h3>
+                                            </div>
+                                            <div class="container p-0 m-0">
+                                                <div class="row">
+                                                    <div class="col-md-12 d-flex">
+                                                        <div class="info-detail me-2">
+                                                            <h5> <img src="img/icon-guest.png" alt="" class="me-2">2 Guest</h5>
+
+                                                        </div>
+                                                        <div class="info-detail me-2">
+                                                            <h5> <img src="img/icon-wearher.png" alt="" class="me-2">2 Guest</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="button-card-detail position-absolute text-center">Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3  mb-3 ">
+                                    <div class="card card-rekomendasi" style="width: 282px;">
+                                        <img src="img/rec1.png" class="card-img-top" alt="...">
+                                        <div class="card-body position-relative">
+                                            <h5 class="card-title">Raja Ampat</h5>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12 p-0 m-0 mb-2">
+                                                        <span class="me-5"><img src="img/location-icon.png" alt=""> Indonesia</span>
+                                                        <span class="me-2"> <img src="img/Show.png" alt=""> +5.3k</span>
+                                                        <a href=""><img src="img/Bookmark.png" alt=""></a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa repudiandae natus error rerum quod vitae libero fugit laudantium repellat labore..</p>
+                                            <hr>
+                                            <div class="price">
+                                                <h3>$35</h3>
+                                            </div>
+                                            <div class="container p-0 m-0">
+                                                <div class="row">
+                                                    <div class="col-md-12 d-flex">
+                                                        <div class="info-detail me-2">
+                                                            <h5> <img src="img/icon-guest.png" alt="" class="me-2">2 Guest</h5>
+
+                                                        </div>
+                                                        <div class="info-detail me-2">
+                                                            <h5> <img src="img/icon-wearher.png" alt="" class="me-2">2 Guest</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="button-card-detail position-absolute text-center">Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3  mb-3 ">
+                                    <div class="card card-rekomendasi" style="width: 282px;">
+                                        <img src="img/rec1.png" class="card-img-top" alt="...">
+                                        <div class="card-body position-relative">
+                                            <h5 class="card-title">Raja Ampat</h5>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12 p-0 m-0 mb-2">
+                                                        <span class="me-5"><img src="img/location-icon.png" alt=""> Indonesia</span>
+                                                        <span class="me-2"> <img src="img/Show.png" alt=""> +5.3k</span>
+                                                        <a href=""><img src="img/Bookmark.png" alt=""></a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa repudiandae natus error rerum quod vitae libero fugit laudantium repellat labore..</p>
+                                            <hr>
+                                            <div class="price">
+                                                <h3>$35</h3>
+                                            </div>
+                                            <div class="container p-0 m-0">
+                                                <div class="row">
+                                                    <div class="col-md-12 d-flex">
+                                                        <div class="info-detail me-2">
+                                                            <h5> <img src="img/icon-guest.png" alt="" class="me-2">2 Guest</h5>
+
+                                                        </div>
+                                                        <div class="info-detail me-2">
+                                                            <h5> <img src="img/icon-wearher.png" alt="" class="me-2">2 Guest</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="button-card-detail position-absolute text-center">Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3  mb-3 ">
+                                    <div class="card card-rekomendasi" style="width: 282px;">
+                                        <img src="img/rec1.png" class="card-img-top" alt="...">
+                                        <div class="card-body position-relative">
+                                            <h5 class="card-title">Raja Ampat</h5>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12 p-0 m-0 mb-2">
+                                                        <span class="me-5"><img src="img/location-icon.png" alt=""> Indonesia</span>
+                                                        <span class="me-2"> <img src="img/Show.png" alt=""> +5.3k</span>
+                                                        <a href=""><img src="img/Bookmark.png" alt=""></a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa repudiandae natus error rerum quod vitae libero fugit laudantium repellat labore..</p>
+                                            <hr>
+                                            <div class="price">
+                                                <h3>$35</h3>
+                                            </div>
+                                            <div class="container p-0 m-0">
+                                                <div class="row">
+                                                    <div class="col-md-12 d-flex">
+                                                        <div class="info-detail me-2">
+                                                            <h5> <img src="img/icon-guest.png" alt="" class="me-2">2 Guest</h5>
+
+                                                        </div>
+                                                        <div class="info-detail me-2">
+                                                            <h5> <img src="img/icon-wearher.png" alt="" class="me-2">2 Guest</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="button-card-detail position-absolute text-center">Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Akhir Rekomendasi -->
+
+    <!-- partner -->
+    <section class="partner mt-5" id="partner">
+        <div class="container mb-5">
+            <div class="parallax">
+                <div class="container-client">
+                    <div class="row ">
+                        <div class="col-md-12 mt-3">
+                            <h5 class="title-partner text-center">Partner With Us</h5>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center align-items-center mt-5">
+                        <div class="col-md-2  offset-1 ">
+                            <img src="img/logo-bni.png">
+                        </div>
+                        <div class="col-md-2 ">
+                            <img src="img/logo-garuda.png">
+                        </div>
+                        <div class="col-md-2 ">
+                            <img src="img/logo-kai.png">
+                        </div>
+                        <div class="col-md-2 ">
+                            <img src="img/logo-lion.png">
+                        </div>
+                        <div class="col-md-2 ">
+                            <img src="img/logo-mandiri.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-5">
+        </div>
+
+    </section>
+    <!-- akhir partner -->
+
+    <!-- service -->
+    <section class="service mb-5" id="service">
+        <div class="container">
+            <div class="row mb-2">
+                <div class="col-md-12">
+                    <h5 class="text-center title-service">Mengapa harus kita?</h5>
+                </div>
+            </div>
+            <div class="row p-2 d-flex justify-content-between">
+                <div class="col-md-5 box-service d-flex justify-content-between align-items-center  mt-5" data-aos="slide-right" data-aos-duration="1000">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3 py-2 ">
+                                <img src="img/icon-money.png" class="mt-4" alt="">
+                            </div>
+                            <div class="col-md-9 mt-4">
+                                <h5 class="title-card-service">Lebih Hemat</h5>
+                                <hr class="mt-1">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et velit consequuntur ratione quidem totam pariatur hic assumenda rem rerum itaque?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 box-service d-flex justify-content-between align-items-center  mt-5" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1000">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3 py-2">
+                                <img src="img/icon-security.png" class="mt-4" alt="">
+                            </div>
+                            <div class="col-md-9 mt-4">
+                                <h5 class="title-card-service">Jaminan Kemananan Privasi</h5>
+                                <hr class="mt-1">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et velit consequuntur ratione quidem totam pariatur hic assumenda rem rerum itaque?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 box-service d-flex justify-content-between align-items-center mt-5" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2000">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3 py-2 px-4">
+                                <img src="img/icon-hp.png" class="mt-4" alt="">
+                            </div>
+                            <div class="col-md-9 mt-4">
+                                <h5 class="title-card-service">Lebih Praktis</h5>
+                                <hr class="mt-1">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et velit consequuntur ratione quidem totam pariatur hic assumenda rem rerum itaque?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 box-service d-flex justify-content-between align-items-center  mt-5" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="3000">
+                    <div class="container ">
+                        <div class="row">
+                            <div class="col-md-3 py-2">
+                                <img src="img/icon-card.png" class="mt-4" alt="">
+                            </div>
+                            <div class="col-md-9 mt-4">
+                                <h5 class="title-card-service">Berbagai Metode Pembayaran</h5>
+                                <hr class="mt-1">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et velit consequuntur ratione quidem totam pariatur hic assumenda rem rerum itaque?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- akhir service -->
+
+    <!-- footer -->
+    <footer class="bg-primary mt-5 py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5 class="logo">Travelin</h5>
+                    <p class="mt-4 mb-" style="width: 200px; font-size: 14px; font-weight: light">Jl. Bendungan Melayu No.14 Jakarta Utara, 14260 Indonesia
+                    </p>
+                    <span style="font-size: 12px;">Travelin © 2022 | situs travel terbaik</span>
+                </div>
+                <div class="col-md-2 info">
+                    <h5 class="logo">Customer Care</h5>
+                    <ul class="p-0 mt-4">
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Payment Care</a></li>
+                        <li><a href="">Booking Tips</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-md-2 info">
+                    <h5 class="logo">Our Service</h5>
+                    <ul class="p-0 mt-4">
+                        <li><a href="">Flash Sale</a></li>
+                        <li><a href="">Terms & Conditions</a></li>
+                        <li><a href="">privacy policy</a></li>
+                        <li><a href="">Travelin Ads</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 info">
+                    <h5 class="logo">Let's Sosilize</h5>
+                    <ul class="p-0 mt-4">
+                        <li>
+                            <a href=""> <img src="img/icon-google.png" alt="" class="me-2">Travelin.id@gmail.com</a>
+                        </li>
+                        <li>
+                            <a href=""> <img src="img/icon-instagram.png" alt="" class="me-2">Travelin</a>
+                        </li>
+                        <li>
+                            <a href=""> <img src="img/icon-twitter.png" alt="" class="me-2">Travelin.id</a>
+                        </li>
+                        <li>
+                            <a href=""> <img src="img/icon-facebook.png" alt="" class="me-2">Travelin01</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .carousel-inner {
+            padding: 1em;
+        }
+        
+        .card {
+            margin: 0 0.5em;
+            box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+            border: none;
+        }
+        
+        .carousel-control-prev,
+        .carousel-control-next {
+            background-color: #e1e1e1;
+            width: 6vh;
+            height: 6vh;
+            border-radius: 50%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        
+        @media (min-width: 768px) {
+            .carousel-item {
+                margin-right: 0;
+                flex: 0 0 33.333333%;
+                display: block;
+            }
+            .carousel-inner {
+                display: flex;
+            }
+        }
+        
+        .card .img-wrapper {
+            max-width: 100%;
+            height: 13em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .card img {
+            max-height: 100%;
+        }
+        
+        @media (max-width: 767px) {
+            .card .img-wrapper {
+                height: 17em;
+            }
+        }
+    </style>
+
+    <!-- akhir footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+
+
+
+
+</body>
+
+
+
+</html>

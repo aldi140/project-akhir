@@ -1,0 +1,447 @@
+                                    * {
+                                        font-family: 'Poppins', sans-serif;
+                                    }
+                                    
+                                     :root {
+                                        --pr-color: #3F95EC;
+                                        --ps-color: #F37021;
+                                    }
+                                    /* navbar */
+                                    
+                                    .navbar {
+                                        background-color: #3F95EC;
+                                    }
+                                    
+                                    .navbar-brand {
+                                        font-size: 20px;
+                                        font-weight: 700;
+                                    }
+                                    
+                                    .button-category span {
+                                        color: rgb(71, 71, 71);
+                                    }
+                                    
+                                    .nav-link {
+                                        font-size: 16px;
+                                        font-weight: 300;
+                                    }
+                                    
+                                    .nav-link.active {
+                                        font-weight: 700;
+                                    }
+                                    /* jumbotron */
+                                    
+                                    .jumbotron {
+                                        background-image: url(../img/Hero1.png);
+                                        background-size: cover;
+                                        background-repeat: no-repeat;
+                                        height: 100vh;
+                                        color: white;
+                                    }
+                                    
+                                    .jumbotron h1 {
+                                        font-size: 35px;
+                                        margin-top: 150px;
+                                    }
+                                    
+                                    .jumbotron h1 span {
+                                        color: var(--ps-color);
+                                    }
+                                    
+                                    .jumbotron p {
+                                        font-size: 18px;
+                                        font-weight: 300;
+                                    }
+                                    
+                                    .input-cari {
+                                        box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+                                        border-radius: 12px;
+                                        margin-top: -170px;
+                                        background-color: white;
+                                        padding: 30px;
+                                    }
+                                    
+                                    .button-category {
+                                        margin-top: -207px;
+                                    }
+                                    /* utilities */
+                                    
+                                    .button-primary {
+                                        width: 140px;
+                                        height: 40px;
+                                        background: var(--pr-color);
+                                        border-radius: 10px;
+                                        border: none;
+                                        color: white;
+                                        font-weight: 600;
+                                        font-size: 16px;
+                                        transition: all .3s ease-in;
+                                    }
+                                    
+                                    .button-primary:hover {
+                                        background-color: white;
+                                        color: var(--pr-color);
+                                        transition: all .3s ease-out;
+                                    }
+                                    
+                                    .button-secondary {
+                                        width: 140px;
+                                        height: 35px;
+                                        background: transparent;
+                                        border-radius: 10px;
+                                        border: none;
+                                        color: white;
+                                        font-weight: 400;
+                                        font-size: 16px;
+                                    }
+                                    /*                                 
+                                .title-information .information-date {
+                                    margin-left: 30px;
+                                } */
+                                    
+                                    .title-information h5 {
+                                        font-size: 16px;
+                                    }
+                                    
+                                    .input-group input {
+                                        width: 100px;
+                                    }
+                                    /* card promo */
+                                    
+                                    .owl-carousel .card-promo {
+                                        width: 350px;
+                                        height: 222px;
+                                        border: none;
+                                    }
+                                    
+                                    .card-promo img {
+                                        border-radius: 10px;
+                                    }
+                                    
+                                    .see-all a {
+                                        color: #3F95EC;
+                                        text-decoration: none;
+                                        font-size: 14px;
+                                    }
+                                    
+                                    .most-popular {
+                                        margin-top: 100px;
+                                    }
+                                    
+                                    .sub-title h3 {
+                                        font-weight: 600;
+                                        font-size: 24px;
+                                        color: #34322F;
+                                    }
+                                    
+                                    .sub-title span {
+                                        color: #F37021;
+                                        ;
+                                    }
+                                    /* card most popular */
+                                    
+                                    .card-most {
+                                        width: 350px;
+                                        height: 251px;
+                                        border: none;
+                                    }
+                                    
+                                    .card-most img {
+                                        border-radius: 10px;
+                                    }
+                                    
+                                    .card-most h5,
+                                    .card-most p {
+                                        color: white;
+                                        font-size: 16px;
+                                        font-weight: 600;
+                                    }
+                                    
+                                    .card-most .button-mp {
+                                        width: 100px;
+                                        height: 27.08px;
+                                        background: rgba(63, 149, 236, 0.8);
+                                        border-radius: 7px;
+                                        border: none;
+                                        color: white;
+                                        font-size: 12px;
+                                        left: 240px;
+                                        top: 170px;
+                                    }
+                                    
+                                    .sub-title-mp {
+                                        position: absolute;
+                                        top: 150px;
+                                        left: 50px;
+                                    }
+                                    
+                                    .sub-title-mp p {
+                                        margin-top: -10px;
+                                    }
+                                    
+                                    .sub-title-mp span {
+                                        color: white;
+                                        font-size: 13px;
+                                        font-weight: 400;
+                                        margin-top: -12px;
+                                        position: absolute;
+                                        display: flex;
+                                    }
+                                    /* rekomendasi */
+                                    
+                                    .nav-item .kategori-kota {
+                                        background-color: #E4F2FF;
+                                        font-size: 14px;
+                                        padding: 10px 25px;
+                                    }
+                                    
+                                    .nav-item .kategori-kota:hover {
+                                        background-color: #d1e0ee;
+                                    }
+                                    
+                                    .nav-item .nav-link .active {
+                                        font-weight: 400;
+                                    }
+                                    
+                                    .rekomendasi-title h5 {
+                                        font-weight: 600;
+                                        font-size: 24px;
+                                        /* identical to box height */
+                                        color: #34322F;
+                                    }
+                                    
+                                    .card-rekomendasi {
+                                        border-radius: 10px;
+                                    }
+                                    
+                                    .card-rekomendasi .card-title {
+                                        font-size: 14px;
+                                        font-weight: 600;
+                                        color: #34322F;
+                                    }
+                                    
+                                    .card-rekomendasi span {
+                                        font-size: 12px;
+                                        font-weight: 500;
+                                        color: #929291;
+                                    }
+                                    
+                                    .card-rekomendasi .card-text {
+                                        font-weight: 500;
+                                        font-size: 12px;
+                                        line-height: 15px;
+                                        color: #3C3B3B;
+                                        margin-top: 10px;
+                                    }
+                                    
+                                    .card-rekomendasi .price h3 {
+                                        font-size: 16px;
+                                        font-weight: 600;
+                                        color: #F37021;
+                                    }
+                                    
+                                    .card-rekomendasi .info-detail h5 {
+                                        font-size: 12px;
+                                        font-weight: 500;
+                                        color: #818180;
+                                    }
+                                    
+                                    .card-rekomendasi .button-card-detail {
+                                        width: 100px;
+                                        height: 30px;
+                                        background-color: #3F95EC;
+                                        font-size: 12px;
+                                        font-weight: 500;
+                                        text-decoration: none;
+                                        line-height: 30px;
+                                        color: white;
+                                        border-radius: 5px;
+                                        left: 175px;
+                                        top: 200px;
+                                        transition: all .3s ease-in;
+                                    }
+                                    
+                                    .card-rekomendasi .button-card-detail:hover {
+                                        background-color: #1a72c9;
+                                        transition: all .3s ease-out;
+                                    }
+                                    /* partner */
+                                    
+                                    .partner .parallax {
+                                        background-image: url(../img/client.png);
+                                        height: 200px;
+                                    }
+                                    
+                                    .partner .title-partner {
+                                        color: white;
+                                        font-weight: 500;
+                                        font-size: 24px;
+                                    }
+                                    /* Service */
+                                    
+                                    .service .box-service {
+                                        width: 500px;
+                                        height: 130px;
+                                        background-color: #E4F2FF;
+                                        border-radius: 10px;
+                                        box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+                                        transition: all .3s ease-in;
+                                    }
+                                    
+                                    .service .box-service:hover {
+                                        background-color: rgb(188, 211, 233);
+                                        transition: all .3s ease-out;
+                                    }
+                                    
+                                    .service .title-service {
+                                        font-weight: 600;
+                                        font-size: 24px;
+                                    }
+                                    
+                                    .service .title-card-service {
+                                        font-size: 18px;
+                                        font-weight: 600;
+                                    }
+                                    
+                                    .box-service p {
+                                        font-size: 12px;
+                                        font-weight: 400;
+                                        margin-top: -10px;
+                                    }
+                                    
+                                    footer {
+                                        color: #fff;
+                                    }
+                                    
+                                    footer ul {
+                                        list-style-type: none;
+                                    }
+                                    
+                                    footer .info ul li a {
+                                        color: #fff;
+                                        text-decoration: none;
+                                        font-size: 12px;
+                                        font-weight: lighter;
+                                    }
+                                    /*                                 
+                                .title-information .date {
+                                    margin-left: 300px;
+                                } */
+                                    /* .title-information img {
+                                    margin-right: 10px;
+                                } */
+                                    
+                                    @media (min-width: 992px) {
+                                        .jumbotron h1 {
+                                            font-size: 40px;
+                                            margin-top: 150px;
+                                        }
+                                        .jumbotron p {
+                                            font-size: 20px;
+                                            font-weight: 300;
+                                        }
+                                        .navbar-brand,
+                                        .navbar-nav .nav-link {
+                                            color: white !important;
+                                        }
+                                        .navbar-nav .nav-link:hover::after {
+                                            content: '';
+                                            display: block;
+                                            border-bottom: 3px solid var(--pr-color);
+                                            width: 50%;
+                                            margin: auto;
+                                            border-radius: 10px;
+                                            margin-bottom: -8px;
+                                        }
+                                        .jumbotron {
+                                            margin-top: -70px;
+                                        }
+                                        /* nav & tabs */
+                                        .button-category {
+                                            width: 134px;
+                                            border: none;
+                                            font-size: 14px;
+                                        }
+                                        .input-cari {
+                                            background-color: white;
+                                            width: 895px;
+                                            height: 100%;
+                                            border-radius: 0px 0px 10px 10px;
+                                            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+                                        }
+                                        .input-cari:focus {
+                                            border: none;
+                                        }
+                                        .tab-content {
+                                            width: 1000px;
+                                        }
+                                        .input-cari .form-floating .form-select {
+                                            width: 180px;
+                                            height: 55px;
+                                            font-size: 14px;
+                                        }
+                                        .button-cari {
+                                            width: 183px;
+                                            border: none;
+                                            background-color: #F37021;
+                                            border-radius: 10px;
+                                            color: white;
+                                            font-size: 16px;
+                                            transition: all .3s ease-out;
+                                            height: 43px;
+                                            margin-top: 20px;
+                                        }
+                                        .button-cari img {
+                                            margin-right: 10px;
+                                            width: 15px;
+                                        }
+                                        .button-cari:hover {
+                                            background-color: #d65b0e;
+                                            transition: all .3s ease-out;
+                                        }
+                                    }
+                                    
+                                    @media (max-width: 576px) {
+                                        .button-cari {
+                                            width: 133px;
+                                            margin: 30px 0;
+                                            border: none;
+                                            background-color: #F37021;
+                                            border-radius: 5px;
+                                            color: white;
+                                            font-size: 14px;
+                                            transition: all .3s ease-out;
+                                            height: 33px;
+                                        }
+                                        .button-cari:hover {
+                                            background-color: #d65b0e;
+                                            transition: all .3s ease-out;
+                                        }
+                                        .box-navtabs {
+                                            margin: auto;
+                                        }
+                                        .input-cari {
+                                            background-color: white;
+                                            width: 400px;
+                                            height: 150px;
+                                            border-radius: 0px 0px 10px 10px;
+                                        }
+                                        .button-category {
+                                            width: 80px;
+                                            border: none;
+                                            font-size: 10px;
+                                            height: 40px;
+                                            font-weight: 500;
+                                        }
+                                        .nav-link img {
+                                            width: 15px;
+                                        }
+                                        .input-cari .form-select {
+                                            width: 100px;
+                                            height: 25px;
+                                            font-size: 14px;
+                                            font-weight: 500;
+                                            border-radius: 5px;
+                                            margin-top: 20px;
+                                        }
+                                    }

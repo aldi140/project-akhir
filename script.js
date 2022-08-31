@@ -66,3 +66,29 @@ if (window.matchMedia("(min-width: 768px)").matches) {
 } else {
     $(multipleCardCarousel2).addClass("slide");
 }
+
+// navbar
+const navbar = document.getElementsByTagName('nav')[0];
+window.addEventListener('scroll', function() {
+
+    if (this.window.scrollY > 1) {
+        navbar.classList.replace('bg-transparent', 'nav-color');
+    } else if (this.window.scrollY <= 0) {
+        navbar.classList.replace('nav-color', 'bg-transparent');
+    }
+});
+const button = document.getElementsByClassName('.button-primary');
+window.addEventListener('scroll', function() {
+
+    if (this.window.scrollY > 1) {
+        button.classList.replace('button-primary', 'button-primary2');
+    } else if (this.window.scrollY <= 0) {
+        button.classList.replace('button-primary2', 'button-primary');
+    }
+});
+
+
+// $(document).ready(function() {
+//     $(".content .one-way").hide();
+//     $(".content .one-way:first-child").show();
+// });

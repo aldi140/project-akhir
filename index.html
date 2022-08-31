@@ -20,6 +20,9 @@
     <!-- My CSS -->
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,7 +34,7 @@
 
 <body>
     <!-- nav -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
         <div class="container mt-2">
             <a class="navbar-brand fw-bold" href="#">TRAVELIN</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -113,29 +116,16 @@
                                 </div>
                             </div>
 
+
+                            <!-- form -->
                             <div class="container">
-                                <div class="row mt-4">
+                                <div class="row">
+
                                     <div class="col-md-3">
                                         <div class="title-information mx-1 ">
                                             <h5> <img src="img/location-icon.png" alt=""> Destination </h5>
                                         </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="title-information ">
-                                            <h5> <img src="img/location-icon.png" alt=""> When do we go? </h5>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="title-information">
-                                            <h5> <img src="img/location-icon.png" alt=""> How Many? </h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- form -->
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-3">
+
                                         <div class="form-floating py-2">
                                             <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
                                         
@@ -150,7 +140,10 @@
                                         </div>
                                     </div>
                                     <div class="col-md-3">
-                                        <div class="container" style="border: 1px solid rgb(216, 214, 214); font-size: 14px; border-radius: 3px; margin-top: 8px; color: rgb(168, 167, 167);">
+                                        <div class="title-information ">
+                                            <h5> <img src="img/location-icon.png" alt=""> When do we go? </h5>
+                                        </div>
+                                        <div class="container" style="border: 1px solid rgb(216, 214, 214); font-size: 14px; border-radius: 3px; margin-top: 18px; color: rgb(168, 167, 167);">
                                             <form>
                                                 <label for="floatingSelect">date:</label>
                                                 <input type="date" id="floatingSelect" name="floatingSelect" style="border: none;">
@@ -159,6 +152,11 @@
 
                                     </div>
                                     <div class="col-md-3">
+
+                                        <div class="title-information">
+                                            <h5> <img src="img/location-icon.png" alt=""> How Many? </h5>
+                                        </div>
+
                                         <div class="form-floating py-2">
                                             <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
                                                 <option value="" disabled selected >Select your option</option>
@@ -200,29 +198,15 @@
                                 </div>
                             </div>
 
-                            <div class="container">
-                                <div class="row mt-4">
-                                    <div class="col-md-3">
-                                        <div class="title-information mx-1 ">
-                                            <h5> <img src="img/location-icon.png" alt=""> Destination </h5>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="title-information ">
-                                            <h5> <img src="img/location-icon.png" alt=""> When do we go? </h5>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="title-information">
-                                            <h5> <img src="img/location-icon.png" alt=""> How Many? </h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+
                             <!-- form -->
                             <div class="container">
                                 <div class="row">
                                     <div class="col-md-3">
+                                        <div class="title-information mx-1 ">
+                                            <h5> <img src="img/location-icon.png" alt=""> Destination </h5>
+                                        </div>
+
                                         <div class="form-floating py-2">
                                             <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
                                                 <option value="" disabled selected >Select your option</option>
@@ -235,7 +219,11 @@
                                         </div>
                                     </div>
                                     <div class="col-md-3">
-                                        <div class="container" style="border: 1px solid rgb(216, 214, 214); font-size: 14px; border-radius: 3px; margin-top: 8px; color: rgb(168, 167, 167);">
+                                        <div class="title-information ">
+                                            <h5> <img src="img/location-icon.png" alt=""> When do we go? </h5>
+                                        </div>
+
+                                        <div class="container" style="border: 1px solid rgb(216, 214, 214); font-size: 14px; border-radius: 3px; margin-top: 18px; color: rgb(168, 167, 167);">
                                             <form>
                                                 <label for="floatingSelect">checkin:</label>
                                                 <input type="date" id="floatingSelect" name="floatingSelect" style="border: none;">
@@ -244,6 +232,10 @@
 
                                     </div>
                                     <div class="col-md-3">
+                                        <div class="title-information">
+                                            <h5> <img src="img/location-icon.png" alt=""> How Many? </h5>
+                                        </div>
+
                                         <div class="form-floating py-2">
                                             <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
                                                 <option value="" disabled selected >Select your option</option>
@@ -283,29 +275,14 @@
                                 </div>
                             </div>
 
-                            <div class="container">
-                                <div class="row mt-4">
-                                    <div class="col-md-3">
-                                        <div class="title-information mx-1 ">
-                                            <h5> <img src="img/location-icon.png" alt=""> Destination </h5>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="title-information ">
-                                            <h5> <img src="img/location-icon.png" alt=""> When do we go? </h5>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="title-information">
-                                            <h5> <img src="img/location-icon.png" alt=""> How Many? </h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+
                             <!-- form -->
                             <div class="container">
                                 <div class="row">
                                     <div class="col-md-3">
+                                        <div class="title-information mx-1 ">
+                                            <h5> <img src="img/location-icon.png" alt=""> Destination </h5>
+                                        </div>
                                         <div class="form-floating py-2">
                                             <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
                                                 <option value="" disabled selected >Select your option</option>
@@ -318,7 +295,10 @@
                                         </div>
                                     </div>
                                     <div class="col-md-3">
-                                        <div class="container" style="border: 1px solid rgb(216, 214, 214); font-size: 14px; border-radius: 3px; margin-top: 8px; color: rgb(168, 167, 167);">
+                                        <div class="title-information ">
+                                            <h5> <img src="img/location-icon.png" alt=""> When do we go? </h5>
+                                        </div>
+                                        <div class="container" style="border: 1px solid rgb(216, 214, 214); font-size: 14px; border-radius: 3px;  margin-top: 18px; color: rgb(168, 167, 167);">
                                             <form>
                                                 <label for="floatingSelect">date:</label>
                                                 <input type="date" id="floatingSelect" name="floatingSelect" style="border: none;">
@@ -327,6 +307,9 @@
 
                                     </div>
                                     <div class="col-md-3">
+                                        <div class="title-information">
+                                            <h5> <img src="img/location-icon.png" alt=""> How Many? </h5>
+                                        </div>
                                         <div class="form-floating py-2">
                                             <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
                                                 <option value="" disabled selected >Select your option</option>
@@ -360,7 +343,7 @@
         <div class="container">
             <div class="row text-end mb-3 see-all">
                 <div class="col-12-md">
-                    <a href="#">lihat semua.. <img src="img/Vector.png" alt=""></a>
+                    <a href="#">lihat semua.. <img src="img/icon-vector.png" alt=""></a>
                 </div>
             </div>
             <div class="container-fluid my-5">
@@ -438,15 +421,15 @@
     <!-- Most Popular -->
     <section class="most-popular">
         <div class="container">
-            <div class="row mb-3" data-aos="fade-up" data-aos-duration="1000">
+            <div class="row mb-3">
                 <div class="col-md-9 ">
-                    <div class="sub-title">
+                    <div class="sub-title" data-aos="fade-down" data-aos-duration="2000">
                         <h3>Most <span>Popular</span> Destination this week!</h3>
                     </div>
                 </div>
                 <div class="col-md-3  d-inline-flex justify-content-end ">
                     <div class="see-all ">
-                        <a href="#">Lihat semua.. <img src="img/Vector.png" alt=""></a>
+                        <a href="#">Lihat semua.. <img src="img/icon-vector.png" alt=""></a>
                     </div>
                 </div>
 
@@ -543,7 +526,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="rekomendasi-title mt-5">
-                        <h5>Recommendation for you!</h5>
+                        <h5 data-aos="fade-left" data-aos-duration="2000">Recommendation for you!</h5>
                     </div>
                 </div>
             </div>
@@ -580,7 +563,43 @@
                                                 <div class="row">
                                                     <div class="col-md-12 p-0 m-0 mb-2">
                                                         <span class="me-5"><img src="img/location-icon.png" alt=""> Indonesia</span>
-                                                        <span class="me-2"> <img src="img/Show.png" alt=""> +5.3k</span>
+                                                        <span class="me-4"> <img src="img/Show.png" alt=""> +5.3k</span>
+                                                        <a href=""><img src="img/Bookmark.png" alt=""></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa repudiandae natus error rerum quod vitae libero fugit laudantium repellat labore..</p>
+                                            <hr>
+                                            <div class="price">
+                                                <h3>$35</h3>
+                                            </div>
+                                            <div class="container p-0 m-0">
+                                                <div class="row">
+                                                    <div class="col-md-12 d-flex">
+                                                        <div class="info-detail me-2">
+                                                            <h5> <img src="img/icon-guest.png" alt="" class="me-2">2 Guest</h5>
+
+                                                        </div>
+                                                        <div class="info-detail me-2">
+                                                            <h5> <img src="img/icon-wearher.png" alt="" class="me-2">2 Guest</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="button-card-detail position-absolute text-center">Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 me-5 mb-3 ">
+                                    <div class="card card-rekomendasi" style="width: 282px;">
+                                        <img src="img/rec1.png" class="card-img-top" alt="...">
+                                        <div class="card-body position-relative">
+                                            <h5 class="card-title">Raja Ampat</h5>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12 p-0 m-0 mb-2">
+                                                        <span class="me-5"><img src="img/location-icon.png" alt=""> Indonesia</span>
+                                                        <span class="me-4"> <img src="img/Show.png" alt=""> +5.3k</span>
                                                         <a href=""><img src="img/Bookmark.png" alt=""></a>
                                                     </div>
 
@@ -617,7 +636,7 @@
                                                 <div class="row">
                                                     <div class="col-md-12 p-0 m-0 mb-2">
                                                         <span class="me-5"><img src="img/location-icon.png" alt=""> Indonesia</span>
-                                                        <span class="me-2"> <img src="img/Show.png" alt=""> +5.3k</span>
+                                                        <span class="me-4"> <img src="img/Show.png" alt=""> +5.3k</span>
                                                         <a href=""><img src="img/Bookmark.png" alt=""></a>
                                                     </div>
 
@@ -654,7 +673,7 @@
                                                 <div class="row">
                                                     <div class="col-md-12 p-0 m-0 mb-2">
                                                         <span class="me-5"><img src="img/location-icon.png" alt=""> Indonesia</span>
-                                                        <span class="me-2"> <img src="img/Show.png" alt=""> +5.3k</span>
+                                                        <span class="me-4"> <img src="img/Show.png" alt=""> +5.3k</span>
                                                         <a href=""><img src="img/Bookmark.png" alt=""></a>
                                                     </div>
 
@@ -691,7 +710,7 @@
                                                 <div class="row">
                                                     <div class="col-md-12 p-0 m-0 mb-2">
                                                         <span class="me-5"><img src="img/location-icon.png" alt=""> Indonesia</span>
-                                                        <span class="me-2"> <img src="img/Show.png" alt=""> +5.3k</span>
+                                                        <span class="me-4"> <img src="img/Show.png" alt=""> +5.3k</span>
                                                         <a href=""><img src="img/Bookmark.png" alt=""></a>
                                                     </div>
 
@@ -728,44 +747,7 @@
                                                 <div class="row">
                                                     <div class="col-md-12 p-0 m-0 mb-2">
                                                         <span class="me-5"><img src="img/location-icon.png" alt=""> Indonesia</span>
-                                                        <span class="me-2"> <img src="img/Show.png" alt=""> +5.3k</span>
-                                                        <a href=""><img src="img/Bookmark.png" alt=""></a>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa repudiandae natus error rerum quod vitae libero fugit laudantium repellat labore..</p>
-                                            <hr>
-                                            <div class="price">
-                                                <h3>$35</h3>
-                                            </div>
-                                            <div class="container p-0 m-0">
-                                                <div class="row">
-                                                    <div class="col-md-12 d-flex">
-                                                        <div class="info-detail me-2">
-                                                            <h5> <img src="img/icon-guest.png" alt="" class="me-2">2 Guest</h5>
-
-                                                        </div>
-                                                        <div class="info-detail me-2">
-                                                            <h5> <img src="img/icon-wearher.png" alt="" class="me-2">2 Guest</h5>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <a href="#" class="button-card-detail position-absolute text-center">Details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 me-5 mb-3 ">
-                                    <div class="card card-rekomendasi" style="width: 282px;">
-                                        <img src="img/rec1.png" class="card-img-top" alt="...">
-                                        <div class="card-body position-relative">
-                                            <h5 class="card-title">Raja Ampat</h5>
-                                            <div class="container">
-                                                <div class="row">
-                                                    <div class="col-md-12 p-0 m-0 mb-2">
-                                                        <span class="me-5"><img src="img/location-icon.png" alt=""> Indonesia</span>
-                                                        <span class="me-2"> <img src="img/Show.png" alt=""> +5.3k</span>
+                                                        <span class="me-4"> <img src="img/Show.png" alt=""> +5.3k</span>
                                                         <a href=""><img src="img/Bookmark.png" alt=""></a>
                                                     </div>
 
@@ -809,7 +791,7 @@
                                                 <div class="row">
                                                     <div class="col-md-12 p-0 m-0 mb-2">
                                                         <span class="me-5"><img src="img/location-icon.png" alt=""> Indonesia</span>
-                                                        <span class="me-2"> <img src="img/Show.png" alt=""> +5.3k</span>
+                                                        <span class="me-4"> <img src="img/Show.png" alt=""> +5.3k</span>
                                                         <a href=""><img src="img/Bookmark.png" alt=""></a>
                                                     </div>
 
@@ -846,7 +828,7 @@
                                                 <div class="row">
                                                     <div class="col-md-12 p-0 m-0 mb-2">
                                                         <span class="me-5"><img src="img/location-icon.png" alt=""> Indonesia</span>
-                                                        <span class="me-2"> <img src="img/Show.png" alt=""> +5.3k</span>
+                                                        <span class="me-4"> <img src="img/Show.png" alt=""> +5.3k</span>
                                                         <a href=""><img src="img/Bookmark.png" alt=""></a>
                                                     </div>
 
@@ -883,7 +865,7 @@
                                                 <div class="row">
                                                     <div class="col-md-12 p-0 m-0 mb-2">
                                                         <span class="me-5"><img src="img/location-icon.png" alt=""> Indonesia</span>
-                                                        <span class="me-2"> <img src="img/Show.png" alt=""> +5.3k</span>
+                                                        <span class="me-4"> <img src="img/Show.png" alt=""> +5.3k</span>
                                                         <a href=""><img src="img/Bookmark.png" alt=""></a>
                                                     </div>
 
@@ -920,7 +902,7 @@
                                                 <div class="row">
                                                     <div class="col-md-12 p-0 m-0 mb-2">
                                                         <span class="me-5"><img src="img/location-icon.png" alt=""> Indonesia</span>
-                                                        <span class="me-2"> <img src="img/Show.png" alt=""> +5.3k</span>
+                                                        <span class="me-4"> <img src="img/Show.png" alt=""> +5.3k</span>
                                                         <a href=""><img src="img/Bookmark.png" alt=""></a>
                                                     </div>
 
@@ -957,7 +939,7 @@
                                                 <div class="row">
                                                     <div class="col-md-12 p-0 m-0 mb-2">
                                                         <span class="me-5"><img src="img/location-icon.png" alt=""> Indonesia</span>
-                                                        <span class="me-2"> <img src="img/Show.png" alt=""> +5.3k</span>
+                                                        <span class="me-4"> <img src="img/Show.png" alt=""> +5.3k</span>
                                                         <a href=""><img src="img/Bookmark.png" alt=""></a>
                                                     </div>
 
@@ -994,7 +976,7 @@
                                                 <div class="row">
                                                     <div class="col-md-12 p-0 m-0 mb-2">
                                                         <span class="me-5"><img src="img/location-icon.png" alt=""> Indonesia</span>
-                                                        <span class="me-2"> <img src="img/Show.png" alt=""> +5.3k</span>
+                                                        <span class="me-4"> <img src="img/Show.png" alt=""> +5.3k</span>
                                                         <a href=""><img src="img/Bookmark.png" alt=""></a>
                                                     </div>
 
@@ -1039,7 +1021,7 @@
                                                 <div class="row">
                                                     <div class="col-md-12 p-0 m-0 mb-2">
                                                         <span class="me-5"><img src="img/location-icon.png" alt=""> Indonesia</span>
-                                                        <span class="me-2"> <img src="img/Show.png" alt=""> +5.3k</span>
+                                                        <span class="me-4"> <img src="img/Show.png" alt=""> +5.3k</span>
                                                         <a href=""><img src="img/Bookmark.png" alt=""></a>
                                                     </div>
 
@@ -1076,7 +1058,7 @@
                                                 <div class="row">
                                                     <div class="col-md-12 p-0 m-0 mb-2">
                                                         <span class="me-5"><img src="img/location-icon.png" alt=""> Indonesia</span>
-                                                        <span class="me-2"> <img src="img/Show.png" alt=""> +5.3k</span>
+                                                        <span class="me-4"> <img src="img/Show.png" alt=""> +5.3k</span>
                                                         <a href=""><img src="img/Bookmark.png" alt=""></a>
                                                     </div>
 
@@ -1113,7 +1095,7 @@
                                                 <div class="row">
                                                     <div class="col-md-12 p-0 m-0 mb-2">
                                                         <span class="me-5"><img src="img/location-icon.png" alt=""> Indonesia</span>
-                                                        <span class="me-2"> <img src="img/Show.png" alt=""> +5.3k</span>
+                                                        <span class="me-4"> <img src="img/Show.png" alt=""> +5.3k</span>
                                                         <a href=""><img src="img/Bookmark.png" alt=""></a>
                                                     </div>
 
@@ -1150,7 +1132,7 @@
                                                 <div class="row">
                                                     <div class="col-md-12 p-0 m-0 mb-2">
                                                         <span class="me-5"><img src="img/location-icon.png" alt=""> Indonesia</span>
-                                                        <span class="me-2"> <img src="img/Show.png" alt=""> +5.3k</span>
+                                                        <span class="me-4"> <img src="img/Show.png" alt=""> +5.3k</span>
                                                         <a href=""><img src="img/Bookmark.png" alt=""></a>
                                                     </div>
 
@@ -1187,7 +1169,7 @@
                                                 <div class="row">
                                                     <div class="col-md-12 p-0 m-0 mb-2">
                                                         <span class="me-5"><img src="img/location-icon.png" alt=""> Indonesia</span>
-                                                        <span class="me-2"> <img src="img/Show.png" alt=""> +5.3k</span>
+                                                        <span class="me-4"> <img src="img/Show.png" alt=""> +5.3k</span>
                                                         <a href=""><img src="img/Bookmark.png" alt=""></a>
                                                     </div>
 
@@ -1224,7 +1206,7 @@
                                                 <div class="row">
                                                     <div class="col-md-12 p-0 m-0 mb-2">
                                                         <span class="me-5"><img src="img/location-icon.png" alt=""> Indonesia</span>
-                                                        <span class="me-2"> <img src="img/Show.png" alt=""> +5.3k</span>
+                                                        <span class="me-4"> <img src="img/Show.png" alt=""> +5.3k</span>
                                                         <a href=""><img src="img/Bookmark.png" alt=""></a>
                                                     </div>
 
@@ -1268,7 +1250,7 @@
                                                 <div class="row">
                                                     <div class="col-md-12 p-0 m-0 mb-2">
                                                         <span class="me-5"><img src="img/location-icon.png" alt=""> Indonesia</span>
-                                                        <span class="me-2"> <img src="img/Show.png" alt=""> +5.3k</span>
+                                                        <span class="me-4"> <img src="img/Show.png" alt=""> +5.3k</span>
                                                         <a href=""><img src="img/Bookmark.png" alt=""></a>
                                                     </div>
 
@@ -1305,7 +1287,7 @@
                                                 <div class="row">
                                                     <div class="col-md-12 p-0 m-0 mb-2">
                                                         <span class="me-5"><img src="img/location-icon.png" alt=""> Indonesia</span>
-                                                        <span class="me-2"> <img src="img/Show.png" alt=""> +5.3k</span>
+                                                        <span class="me-4"> <img src="img/Show.png" alt=""> +5.3k</span>
                                                         <a href=""><img src="img/Bookmark.png" alt=""></a>
                                                     </div>
 
@@ -1342,7 +1324,7 @@
                                                 <div class="row">
                                                     <div class="col-md-12 p-0 m-0 mb-2">
                                                         <span class="me-5"><img src="img/location-icon.png" alt=""> Indonesia</span>
-                                                        <span class="me-2"> <img src="img/Show.png" alt=""> +5.3k</span>
+                                                        <span class="me-4"> <img src="img/Show.png" alt=""> +5.3k</span>
                                                         <a href=""><img src="img/Bookmark.png" alt=""></a>
                                                     </div>
 
@@ -1379,7 +1361,7 @@
                                                 <div class="row">
                                                     <div class="col-md-12 p-0 m-0 mb-2">
                                                         <span class="me-5"><img src="img/location-icon.png" alt=""> Indonesia</span>
-                                                        <span class="me-2"> <img src="img/Show.png" alt=""> +5.3k</span>
+                                                        <span class="me-4"> <img src="img/Show.png" alt=""> +5.3k</span>
                                                         <a href=""><img src="img/Bookmark.png" alt=""></a>
                                                     </div>
 
@@ -1416,7 +1398,7 @@
                                                 <div class="row">
                                                     <div class="col-md-12 p-0 m-0 mb-2">
                                                         <span class="me-5"><img src="img/location-icon.png" alt=""> Indonesia</span>
-                                                        <span class="me-2"> <img src="img/Show.png" alt=""> +5.3k</span>
+                                                        <span class="me-4"> <img src="img/Show.png" alt=""> +5.3k</span>
                                                         <a href=""><img src="img/Bookmark.png" alt=""></a>
                                                     </div>
 
@@ -1453,7 +1435,7 @@
                                                 <div class="row">
                                                     <div class="col-md-12 p-0 m-0 mb-2">
                                                         <span class="me-5"><img src="img/location-icon.png" alt=""> Indonesia</span>
-                                                        <span class="me-2"> <img src="img/Show.png" alt=""> +5.3k</span>
+                                                        <span class="me-4"> <img src="img/Show.png" alt=""> +5.3k</span>
                                                         <a href=""><img src="img/Bookmark.png" alt=""></a>
                                                     </div>
 
@@ -1531,7 +1513,7 @@
         <div class="container">
             <div class="row mb-2">
                 <div class="col-md-12">
-                    <h5 class="text-center title-service">Mengapa harus kita?</h5>
+                    <h5 class="text-center title-service" data-aos="fade-down" data-aos-duration="1000">Mengapa harus kita?</h5>
                 </div>
             </div>
             <div class="row p-2 d-flex justify-content-between">
@@ -1658,43 +1640,24 @@
             border: none;
         }
         
-        .carousel-control-prev,
-        .carousel-control-next {
-            background-color: #e1e1e1;
+        .carousel-control-prev {
+            background-color: #3F95EC;
             width: 6vh;
             height: 6vh;
             border-radius: 50%;
             top: 50%;
             transform: translateY(-50%);
+            transform: translateX(-80%);
         }
         
-        @media (min-width: 768px) {
-            .carousel-item {
-                margin-right: 0;
-                flex: 0 0 33.333333%;
-                display: block;
-            }
-            .carousel-inner {
-                display: flex;
-            }
-        }
-        
-        .card .img-wrapper {
-            max-width: 100%;
-            height: 13em;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        .card img {
-            max-height: 100%;
-        }
-        
-        @media (max-width: 767px) {
-            .card .img-wrapper {
-                height: 17em;
-            }
+        .carousel-control-next {
+            background-color: #3F95EC;
+            width: 6vh;
+            height: 6vh;
+            border-radius: 50%;
+            top: 50%;
+            transform: translateY(-50%);
+            transform: translateX(100%);
         }
     </style>
 
